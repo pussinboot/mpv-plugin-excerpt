@@ -106,7 +106,7 @@ function excerpt_write_handler()
 
     local fname = ""
     for i=0,999 do
-        local f = srcname..string.format("_excerpt_%03d.mkv", i)
+        local f = srcname..string.format("_excerpt_%03d.mp4", i)
     
         -- mp.msg.log("info", "ftable[" .. f .. "] = " .. direntries[f])
     
