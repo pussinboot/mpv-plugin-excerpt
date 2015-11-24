@@ -1,3 +1,8 @@
+
+new version by pussinboot
+=========================
+works with windows and no need for excerpt_copy script
+
 Excerpt creation from within mpv
 ================================
 
@@ -52,13 +57,6 @@ ready for execution in your $PATH.
 (ffmpeg is probably already installed if you have mpv installed,
 as mpv makes use of the ffmpeg libraries.)
 
-Copy the "excerpt_copy" shell script to some directory included
-in your $PATH. You might want to modify the excerpt_copy script
-if you want something else than simple, key-frame accurate extraction
-without re-encoding. If you want to change the names of the destination
-excerpt files, you have to chang the excerpt.lua script for now.
-
-
 Usage:
 ======
 
@@ -67,15 +65,12 @@ video excerpts to be written.
 
 Then just start mpv like this:
 
-mpv --lua /path/to/excerpt.lua -fs --script-opts=osc-layout=bottombar yourmediafile.mp4
+mpv --lua /path/to/excerpt.lua yourmediafile.mkv
 
-Where "yourmediafile.mp4" is of course to be replaced by the file
+Where "yourmediafile.mkv" is of course to be replaced by the file
 you actually want to extract from. You can also provide multiple file names,
 just press the "Return" key once you're done with a file.
 
-The "-fs" and "--script-opts=osc-layout=bottombar" options are not strictly
-required, but IMHO the OSC interface is thus best suited for navigating 
-through the files.
 
 After start, the video replay will be paused at the begin.
 
